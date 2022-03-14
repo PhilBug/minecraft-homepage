@@ -7,4 +7,5 @@ COPY ./assets /www/data/assets
 COPY ./dist /www/data/dist
 COPY ./index.html /www/data/index.html
 
-COPY ./nginx.conf /etc/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
+RUN rm -rf /etc/nginx/conf.d/*
